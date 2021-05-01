@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Compose from '../Buttons/Compose'
-import SideBarButtons from '../Buttons/SideBarButtons'
+import { sideBarButtons } from '../../Data/SideBarButtons'
 
 
 function SideBar() {
@@ -14,7 +14,11 @@ function SideBar() {
             </ComposeWrapper>
             <SideButtonsWrapper>
                 {/* all side buttons */}
-                <SideBarButtons />
+                {
+                    sideBarButtons.map(button => (
+                        <SideBarButton>{button.icon} {button.text}</SideBarButton>
+                    ))
+                }
             </SideButtonsWrapper>
             <MeetWrapper>
                 {/* all meet button  */}
@@ -33,7 +37,24 @@ export default SideBar
 
 const Wrapper = styled.div``
 const ComposeWrapper = styled.div``
-const SideButtonsWrapper = styled.div``
+const SideButtonsWrapper = styled.div`
+
+`
+const SideBarButton = styled.div`
+    display: grid;
+    grid-template-columns: 18% auto;
+    align-items: center;
+    color: #3c4043;
+    padding: 6px 0 6px 32px;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+
+    :hover {
+        background: #eee;
+    }
+
+
+`
 const MeetWrapper = styled.div``
 const HangoutWrapper = styled.div``
 const ButtomIconsWrapper = styled.div``
