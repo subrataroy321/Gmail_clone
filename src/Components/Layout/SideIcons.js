@@ -5,7 +5,7 @@ import styled from 'styled-components'
 function SideIcons() {
     return (
         <Wrapper>
-            
+            <p>SideIcons</p>
         </Wrapper>
     )
 }

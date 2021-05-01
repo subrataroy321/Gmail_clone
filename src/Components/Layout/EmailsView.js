@@ -5,7 +5,7 @@ import styled from 'styled-components'
 function EmailsView() {
     return (
         <Wrapper>
-            
+            <p>Email View</p>
         </Wrapper>
     )
 }

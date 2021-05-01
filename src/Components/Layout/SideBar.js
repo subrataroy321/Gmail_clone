@@ -5,6 +5,7 @@ import styled from 'styled-components'
 function SideBar() {
     return (
         <Wrapper>
+            <p>SideBar</p>
             <ComposeWrapper>
                 {/* Compose Button*/}
             </ComposeWrapper>
