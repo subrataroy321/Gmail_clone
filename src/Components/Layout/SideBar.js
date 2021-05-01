@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Compose from '../Buttons/Compose'
+import SideBarButtons from '../Buttons/SideBarButtons'
 
 
 function SideBar() {
@@ -13,6 +14,7 @@ function SideBar() {
             </ComposeWrapper>
             <SideButtonsWrapper>
                 {/* all side buttons */}
+                <SideBarButtons />
             </SideButtonsWrapper>
             <MeetWrapper>
                 {/* all meet button  */}
