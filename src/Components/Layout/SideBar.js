@@ -1,13 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Compose from '../Buttons/Compose'
+
 
 function SideBar() {
     return (
         <Wrapper>
-            <p>SideBar</p>
             <ComposeWrapper>
                 {/* Compose Button*/}
+                <Compose />
             </ComposeWrapper>
             <SideButtonsWrapper>
                 {/* all side buttons */}
