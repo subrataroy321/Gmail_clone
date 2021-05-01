@@ -5,7 +5,21 @@ import styled from 'styled-components'
 function SideBar() {
     return (
         <Wrapper>
-            
+            <ComposeWrapper>
+                {/* Compose Button*/}
+            </ComposeWrapper>
+            <SideButtonsWrapper>
+                {/* all side buttons */}
+            </SideButtonsWrapper>
+            <MeetWrapper>
+                {/* all meet button  */}
+            </MeetWrapper>
+            <HangoutWrapper>
+                {/* all hangout stuffs */}
+            </HangoutWrapper>
+            <ButtomIconsWrapper>
+                {/* all buttom icons  */}
+            </ButtomIconsWrapper>
         </Wrapper>
     )
 }
@@ -13,3 +27,8 @@ function SideBar() {
 export default SideBar
 
 const Wrapper = styled.div``
+const ComposeWrapper = styled.div``
+const SideButtonsWrapper = styled.div``
+const MeetWrapper = styled.div``
+const HangoutWrapper = styled.div``
+const ButtomIconsWrapper = styled.div``
