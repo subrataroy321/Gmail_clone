@@ -74,7 +74,7 @@ const SearchBarWrapper = styled.div`
     max-width: 750px;
     display: grid;
     grid-template-columns: 7% auto 5%;
-    border-radious: 5px;
+    border-radius: 7px;
     height: 45px;
     place-items: center;
     align-items: center;
