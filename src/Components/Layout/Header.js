@@ -62,6 +62,8 @@ const LogoWrapper = styled.div`
     grid-template-columns: 30% auto;
     align-items: center;
     place-items: center;
+    overflow-x: hidden;
+
 `
 
 const Logo = styled.div`
