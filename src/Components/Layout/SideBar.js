@@ -68,9 +68,11 @@ const Wrapper = styled.div`
     border-right: 1px solid lightgray;
 
 `
-const ComposeWrapper = styled.div``
+const ComposeWrapper = styled.div`
+    position: fixed;
+`
 const TopSectionWrapper = styled.div`
-    
+    overflow-y: scroll;
 `
 const ButtomSectionWrapper = styled.div`
     min-height: 300px;
@@ -78,6 +80,7 @@ const ButtomSectionWrapper = styled.div`
     
 `
 const SideButtonsWrapper = styled.div`
+    margin-top: 80px;
 
 `
 const SideBarButton = styled.div`
