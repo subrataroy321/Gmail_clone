@@ -73,6 +73,7 @@ const ComposeWrapper = styled.div`
 `
 const TopSectionWrapper = styled.div`
     overflow-y: scroll;
+    min-height: 250px;
 `
 const ButtomSectionWrapper = styled.div`
     min-height: 300px;
