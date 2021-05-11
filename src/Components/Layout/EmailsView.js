@@ -8,6 +8,9 @@ import IconButton from '@material-ui/core/IconButton';
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft';
 
+import { emailData } from '../../Data/temp/EmailData'
+import EmailItem from '../EmailItme/EmailItem'
+
 function EmailsView() {
     return (
         <Wrapper>
@@ -32,6 +35,12 @@ function EmailsView() {
 
             </TopWrapper>
             <BodyWrapper>
+            {
+                emailData.map( email => (
+
+                    <EmailItem  emailData={email}/>
+                ))
+            }
 
             </BodyWrapper>
         </Wrapper>
