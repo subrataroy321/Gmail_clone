@@ -10,7 +10,7 @@ import CheckBox from '@material-ui/core/CheckBox';
 
 function EmailItem({emailData}) {
 
-    const [star, setStar ] = useState(emailData.started)
+    const [star, setStar ] = useState(emailData.starred)
 
     const changeStar = () => {
         if(star) {
@@ -24,7 +24,7 @@ function EmailItem({emailData}) {
         <Wrapper>
             {console.log(emailData)}
             <CheckBox />
-            <IconButton onClick={changeStar}>
+            <IconButton onClick={changeStar} >
                 {
                     star ? 
                     <StarIcon htmlColor='#f7cb69' />
@@ -34,13 +34,13 @@ function EmailItem({emailData}) {
             </IconButton>
             <EmailDataWrapper>
                 <div>
-                    <p>{emailData.from}</p>
+                    <p className= { !emailData.read && 'unread' }>{emailData.from}</p>
                 </div>
                 <div>
-                    <p>{emailData.subject} - {emailData.message}</p>
+                    <p><span className= { !emailData.read && 'unread' }>{emailData.subject}</span> - {emailData.message}</p>
                 </div>
                 <div>
-                    <p>{emailData.received}</p>
+                    <p className= { !emailData.read && 'unread' }>{emailData.received}</p>
                 </div>
             </EmailDataWrapper>
         </Wrapper>
@@ -59,7 +59,15 @@ const Wrapper = styled.div`
 `
 const EmailDataWrapper = styled.div`
     display: grid;
-    grid-template-columns: 40% auto 10%;
-    place-items: center;
-    text-align: left;
+    grid-template-columns: 17% auto 10%;
+    width: 100%;
+    grid-gap: 10px;
+
+    .unread {
+        font-weight: bold;
+    }
+
+    .false {
+        font-weight: none;
+    }
 `

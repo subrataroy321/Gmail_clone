@@ -13,10 +13,10 @@ export const emailData = [
         subject: "Joining",
         message: "Job your post from monday",
         received: "May 8",
-        read: true
+        read: false
     },
     {
-        starred: true,
+        starred: false,
         from: "Samir",
         subject: "Complete payroll",
         message: "Complete the payroll by Wednesday",

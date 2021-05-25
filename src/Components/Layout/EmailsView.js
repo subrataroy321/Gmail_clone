@@ -9,7 +9,7 @@ import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft';
 
 import { emailData } from '../../Data/temp/EmailData'
-import EmailItem from '../EmailItme/EmailItem'
+import EmailItem from '../EmailItem/EmailItem'
 
 function EmailsView() {
     return (
